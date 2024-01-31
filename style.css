@@ -237,17 +237,17 @@
   align-items: center;
   gap: 10px;
 }
-.banner h2{
+.banner h2 {
   font-size: 3.2rem;
 }
-.banner h1{
+.banner h1 {
   padding-bottom: 2rem;
 }
-.explore-btn{
+.explore-btn {
   display: flex;
   align-items: center;
 }
-.explore-btn a p{
+.explore-btn a p {
   padding-left: 1rem;
   font-size: 1.5rem;
   font-weight: bold;
@@ -432,7 +432,7 @@
 
 .project {
   margin-top: 40px;
-  padding: 40px 20px 20px 20px;
+  padding: 40px 20px 40px 20px;
   background-color: #1e1e28ef;
 }
 .project h1 {
@@ -447,17 +447,20 @@
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  gap: 20px;
+  gap: 8px;
 }
 .project .project-slider .slide-box {
   position: relative;
-  border-radius: 20px;
-  height: 350px;
   flex: 0 0 auto;
-  width: calc(100% / 3);
-  padding: 15px;
-  background-color: #2c2c38;
   overflow: hidden; /* Hide overflow content when height changes */
+  width: 33.333%;
+}
+.project .project-slider .slide-box .box {
+  margin: 8px;
+  height: 350px;
+  border-radius: 20px;
+  padding: 30px;
+  background-color: #2c2c38;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -476,6 +479,7 @@
 }
 .project .project-slider .slide-box h5 {
   color: #7f7f82;
+  text-align: center;
 }
 .project .project-slider .slide-box .bottom {
   position: absolute;
@@ -488,6 +492,7 @@
   opacity: 0;
   transition: opacity 0.3s ease, bottom 0.3s ease; /* Transition for opacity and bottom */
 }
+
 .project .project-slider .slide-box .bottom i {
   display: flex;
   justify-content: center;
@@ -766,75 +771,75 @@
 }
 
 @media screen and (max-width: 768px) {
-  .sideBar{
+  .sideBar {
     display: none;
   }
-  .main-content{
+  .main-content {
     width: 100%;
     padding-inline: 30px;
   }
-  .navbar{
+  .navbar {
     width: 82.5%;
     justify-content: center;
     padding: 6px;
   }
-  .navbar a{
+  .navbar a {
     font-size: 11px;
   }
-  .banner{
+  .banner {
     padding: 20px;
   }
-  .banner-container .content .banner h2{
+  .banner-container .content .banner h2 {
     font-size: 20px;
   }
-  .banner-container .content .banner h1{
+  .banner-container .content .banner h1 {
     font-size: 10px;
     padding-bottom: 0;
   }
-  .banner-btn{
+  .banner-btn {
     border-radius: 5px;
     font-size: 10px;
   }
-  .explore-btn a p{
-    font-size: 12px;  
+  .explore-btn a p {
+    font-size: 12px;
   }
-  .about-me .content-2{
+  .about-me .content-2 {
     padding: 0;
   }
-  .about-me h1{
+  .about-me h1 {
     text-align: center;
   }
-  .about-me .content-2 .dp-img{
+  .about-me .content-2 .dp-img {
     width: 100%;
     height: 90%;
   }
-  .about-me .content-2 .about{
+  .about-me .content-2 .about {
     width: 100%;
   }
-  .about-me .content-2 .about p{
+  .about-me .content-2 .about p {
     font-size: 15px;
   }
-  .about-me .content-2 .about button{
+  .about-me .content-2 .about button {
     padding: 10px;
   }
-  #cvLink1{
+  #cvLink1 {
     text-align: center;
   }
-  #cvLink1 button{
+  #cvLink1 button {
     font-size: 12px;
   }
 
-  .resume .education{
+  .resume .education {
     width: 100%;
     padding-right: 0;
   }
-  .resume .education h1{
+  .resume .education h1 {
     text-align: center;
   }
-  .resume .education .box1 .title h3{
+  .resume .education .box1 .title h3 {
     font-size: 13px;
   }
-  .resume .education .box1 .title h5{
+  .resume .education .box1 .title h5 {
     margin-top: 2px;
     font-size: 10px;
     display: flex;
@@ -844,43 +849,70 @@
     padding-inline: 0;
     margin-bottom: 10px;
   }
-  .resume .education .box1 h4{
+  .resume .education .box1 h4 {
     font-size: 12px;
   }
 
-  .resume .coding-experience{
+  .resume .coding-experience {
     width: 100%;
     padding-left: 0;
     padding-top: 50px;
   }
-  .resume .coding-experience h1{
+  .resume .coding-experience h1 {
     text-align: center;
     white-space: nowrap;
     font-size: 25px;
   }
-  .resume .coding-experience .box1 .title{
+  .resume .coding-experience .box1 .title {
     flex-wrap: wrap;
   }
-  .coding-experience .box1 .title h3{
+  .coding-experience .box1 .title h3 {
     font-size: 13px;
   }
-  .resume .coding-experience .box1 .title h5{
+  .resume .coding-experience .box1 .title h5 {
     background-color: transparent;
     width: 100%;
     display: flex;
     justify-content: end;
     font-size: 10px;
   }
-  .project h1{
+  .project h1 {
     text-align: center;
   }
-  .project p{
+  .project p {
     font-size: 15px;
   }
-  .project .project-slider{
+  .project .project-slider {
     width: 100%;
   }
   .project .project-slider .slide-box {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .project .project-slider .slide-box .box {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .project .project-slider .slide-box {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .project .project-slider .slide-box .box {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .project .project-slider .slide-box {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 440px) {
+  .main-content {
     width: 100%;
   }
 }
