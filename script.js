@@ -195,7 +195,6 @@ function ProjectScrollSlider(direction) {
   var a = window.matchMedia("(max-width: 1290px)")
   if (a.matches) { 
     scrollDistance = 280;
-    console.log("helo");
   } 
   var b = window.matchMedia("(max-width: 1030px)")
   if (b.matches) { 

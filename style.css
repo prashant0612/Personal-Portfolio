@@ -686,6 +686,10 @@
   justify-content: center;
   align-items: center;
 }
+.contact-container .location .map iframe{
+
+}
+
 
 .contact-us .contact-container .user-details {
   width: 65%;
@@ -774,12 +778,16 @@
   .sideBar {
     display: none;
   }
+  .container{
+    padding: 0;
+  }
   .main-content {
     width: 100%;
-    padding-inline: 30px;
+    padding-inline: 15px;
+
   }
   .navbar {
-    width: 82.5%;
+    width: 100%;
     justify-content: center;
     padding: 6px;
   }
@@ -888,6 +896,72 @@
   .project .project-slider .slide-box {
     width: 100%;
   }
+  .project .project-slider .slide-box .box{
+    margin: 0px;
+  }
+  .project .project-slider .slide-box img{
+    height: 50%;
+  }
+  .certificate h1{
+    text-align: center;
+  }
+  .certificate p{
+    font-size: 15px;
+  }
+  .certificate .certificate-slider .box {
+    width: 100%;
+    height: auto;
+  }
+  .certificate .certificate-slider .box img{
+    height: 100%;
+  }
+  .contact-us h1{
+    text-align: center;
+  }
+  .contact-us p{
+    font-size: 15px;
+  }
+  .contact-us .contact-container .location .address i{
+    font-size: 19px;
+  }
+  .contact-container .location .address div{
+    font-size: 12px;
+  }
+  .contact-us .contact-container .location .email h2{
+    font-size: 18px;
+  }
+  .contact-us .contact-container .location .email p{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .contact-us .contact-container .location .email i{
+    font-size: 19px;
+  }
+  .contact-container .location .map iframe{
+    height: 210px;
+  }
+  .contact-us .contact-container .location .phone i{
+    font-size: 19px;
+  }
+  .contact-us .contact-container .location .phone span h2{
+    font-size: 18px;
+  }
+  .contact-us .contact-container .location .phone span #text{
+    font-size: 18px;
+  }
+  .contact-us .contact-container .user-details .username p{
+    font-size: 18px;
+  }
+  .contact-us .contact-container .user-details .email p{
+    font-size: 18px;
+  }
+  .contact-us .contact-container .user-details .message p{
+    font-size: 18px;
+  }
+  .contact-us .contact-container .user-details .send-btn button{
+    font-size: 13px;
+    padding: 10px;
+  }
 }
 
 @media screen and (max-width: 1030px) {
@@ -903,7 +977,7 @@
 }
 @media screen and (max-width: 540px) {
   .project .project-slider .slide-box .box {
-    height: 450px;
+    height: 395px;
   }
 }
 @media screen and (max-width: 440px) {
