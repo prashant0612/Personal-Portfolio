@@ -191,7 +191,7 @@ slider.addEventListener('scroll', () => {
 });
 
 function ProjectScrollSlider(direction) {
-  let scrollDistance = 350; // Adjust the scroll distance as needed
+  var scrollDistance = 350; // Adjust the scroll distance as needed
   var a = window.matchMedia("(max-width: 1290px)")
   if (a.matches) { 
     scrollDistance = 280;
@@ -210,27 +210,27 @@ function ProjectScrollSlider(direction) {
   } 
   var e = window.matchMedia("(max-width: 770px)")
   if (e.matches) { 
-    scrollDistance = 315;
+    scrollDistance = 360;
   } 
   var f = window.matchMedia("(max-width: 550px)")
   if (f.matches) { 
-    scrollDistance = 385;
+    scrollDistance = 248;
+  } 
+  var i= window.matchMedia("(max-width: 432px)")
+  if (i.matches) { 
+    scrollDistance = 370;
   } 
   var g = window.matchMedia("(max-width: 420px)")
   if (g.matches) { 
     scrollDistance = 258;
   } 
-  var h= window.matchMedia("(max-width: 413px)")
-  if (h.matches) { 
-    scrollDistance = 258;
-  } 
-  var i = window.matchMedia("(max-width: 432px)")
-  if (i.matches) { 
-    scrollDistance = 275;
-  } 
   var l = window.matchMedia("(max-width: 416px)")
   if (l.matches) { 
-    scrollDistance = 260;
+    scrollDistance = 355;
+  } 
+  var x= window.matchMedia("(max-width: 413px)")
+  if (x.matches) { 
+    scrollDistance = 351;
   } 
   var k = window.matchMedia("(max-width: 400px)")
   if (k.matches) { 
@@ -240,13 +240,21 @@ function ProjectScrollSlider(direction) {
   if (j.matches) { 
     scrollDistance = 206;
   } 
-  var n = window.matchMedia("(max-width: 376px)")
-  if (n.matches) { 
-    scrollDistance = 222;
+  var p = window.matchMedia("(max-width: 391px)")
+  if (p.matches) { 
+    scrollDistance = 330;
   } 
-  var j = window.matchMedia("(max-width: 361px)")
-  if (j.matches) { 
-    scrollDistance = 204;
+  var o = window.matchMedia("(max-width: 361px)")
+  if (o.matches) { 
+    scrollDistance = 300;
+  } 
+  var un = window.matchMedia("(max-width: 376px)")
+  if (un.matches) { 
+    scrollDistance = 315;
+  } 
+  var u = window.matchMedia("(max-width: 281px)")
+  if (u.matches) { 
+    scrollDistance = 220;
   } 
 
   const slider = document.querySelector('.project-slider');
@@ -286,7 +294,72 @@ function hideFullScreen() {
 
 function CertificateScrollSlider(direction) {
   const slider = document.querySelector('.certificate-slider');
-  const scrollDistance = 400; // Adjust the scroll distance as needed
+ 
+  var scrollDistance = 350; // Adjust the scroll distance as needed
+  var a = window.matchMedia("(max-width: 1290px)")
+  if (a.matches) { 
+    scrollDistance = 280;
+  } 
+  var b = window.matchMedia("(max-width: 1030px)")
+  if (b.matches) { 
+    scrollDistance = 218;
+  } 
+  var c = window.matchMedia("(max-width: 920px)")
+  if (c.matches) { 
+    scrollDistance = 270;
+  } 
+  var d = window.matchMedia("(max-width: 825px)")
+  if (d.matches) { 
+    scrollDistance = 235;
+  } 
+  var e = window.matchMedia("(max-width: 770px)")
+  if (e.matches) { 
+    scrollDistance = 360;
+  } 
+  var f = window.matchMedia("(max-width: 550px)")
+  if (f.matches) { 
+    scrollDistance = 248;
+  } 
+  var i= window.matchMedia("(max-width: 432px)")
+  if (i.matches) { 
+    scrollDistance = 370;
+  } 
+  var g = window.matchMedia("(max-width: 420px)")
+  if (g.matches) { 
+    scrollDistance = 258;
+  } 
+  var l = window.matchMedia("(max-width: 416px)")
+  if (l.matches) { 
+    scrollDistance = 355;
+  } 
+  var x= window.matchMedia("(max-width: 413px)")
+  if (x.matches) { 
+    scrollDistance = 351;
+  } 
+  var k = window.matchMedia("(max-width: 400px)")
+  if (k.matches) { 
+    scrollDistance = 235;
+  } 
+  var j = window.matchMedia("(max-width: 370px)")
+  if (j.matches) { 
+    scrollDistance = 206;
+  } 
+  var p = window.matchMedia("(max-width: 391px)")
+  if (p.matches) { 
+    scrollDistance = 330;
+  } 
+  var o = window.matchMedia("(max-width: 361px)")
+  if (o.matches) { 
+    scrollDistance = 300;
+  } 
+  var un = window.matchMedia("(max-width: 376px)")
+  if (un.matches) { 
+    scrollDistance = 315;
+  } 
+  var uf = window.matchMedia("(max-width: 281px)")
+  if (uf.matches) { 
+    scrollDistance = 220;
+  } 
 
   if (direction === 'left') {
       slider.scrollBy(-scrollDistance, 0);
