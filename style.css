@@ -617,22 +617,26 @@
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  gap: 20px;
+  gap: 8px;
   white-space: nowrap;
   scroll-behavior: smooth;
 }
 
 .certificate .certificate-slider .box {
-  margin-top: 20px;
   position: relative;
-  border-radius: 20px;
-  height: 280px;
   flex: 0 0 auto;
   width: calc(100% / 3);
-  padding: 15px;
-  background-color: #2c2c38;
   overflow: hidden; /* Hide overflow content when height changes */
 }
+
+.certificate .certificate-slider .box .box-content {
+  margin: 8px;
+  border-radius: 20px;
+  height: 280px;
+  padding: 30px;
+  background-color: #2c2c38;
+}
+
 .certificate .certificate-slider .box img {
   width: 100%;
 }
@@ -770,10 +774,8 @@
   justify-content: center;
   align-items: center;
 }
-.contact-container .location .map iframe{
-
+.contact-container .location .map iframe {
 }
-
 
 .contact-us .contact-container .user-details {
   width: 65%;
@@ -862,13 +864,12 @@
   .sideBar {
     display: none;
   }
-  .container{
+  .container {
     padding: 0;
   }
   .main-content {
     width: 100%;
     padding-inline: 15px;
-
   }
   .navbar {
     width: 100%;
@@ -984,69 +985,69 @@
   .project .project-slider .slide-box {
     width: 100%;
   }
-  .project .project-slider .slide-box .box{
+  .project .project-slider .slide-box .box {
     margin: 0px;
   }
-  .project .project-slider .slide-box img{
+  .project .project-slider .slide-box img {
     height: 50%;
   }
-  .certificate h1{
+  .certificate h1 {
     text-align: center;
   }
-  .certificate p{
+  .certificate p {
     font-size: 15px;
   }
   .certificate .certificate-slider .box {
     width: 100%;
     height: auto;
   }
-  .certificate .certificate-slider .box img{
+  .certificate .certificate-slider .box img {
     height: 100%;
   }
-  .contact-us h1{
+  .contact-us h1 {
     text-align: center;
   }
-  .contact-us p{
+  .contact-us p {
     font-size: 15px;
   }
-  .contact-us .contact-container .location .address i{
+  .contact-us .contact-container .location .address i {
     font-size: 19px;
   }
-  .contact-container .location .address div{
+  .contact-container .location .address div {
     font-size: 12px;
   }
-  .contact-us .contact-container .location .email h2{
+  .contact-us .contact-container .location .email h2 {
     font-size: 18px;
   }
-  .contact-us .contact-container .location .email p{
+  .contact-us .contact-container .location .email p {
     margin-top: 0;
     margin-bottom: 0;
   }
-  .contact-us .contact-container .location .email i{
+  .contact-us .contact-container .location .email i {
     font-size: 19px;
   }
-  .contact-container .location .map iframe{
+  .contact-container .location .map iframe {
     height: 210px;
   }
-  .contact-us .contact-container .location .phone i{
+  .contact-us .contact-container .location .phone i {
     font-size: 19px;
   }
-  .contact-us .contact-container .location .phone span h2{
+  .contact-us .contact-container .location .phone span h2 {
     font-size: 18px;
   }
-  .contact-us .contact-container .location .phone span #text{
+  .contact-us .contact-container .location .phone span #text {
     font-size: 18px;
   }
-  .contact-us .contact-container .user-details .username p{
+  .contact-us .contact-container .user-details .username p {
     font-size: 18px;
   }
-  .contact-us .contact-container .user-details .email p{
+  .contact-us .contact-container .user-details .email p {
     font-size: 18px;
   }
-  .contact-us .contact-container .user-details .message p{
+  .contact-us .contact-container .user-details .message p {
     font-size: 18px;
   }
-  .contact-us .contact-container .user-details .send-btn button{
+  .contact-us .contact-container .user-details .send-btn button {
     font-size: 13px;
     padding: 10px;
   }
@@ -1056,25 +1057,37 @@
   .project .project-slider .slide-box .box {
     padding: 20px;
   }
+  .certificate .certificate-slider .box .box-content {
+    padding: 20px;
+  }
 }
 
 @media screen and (max-width: 920px) {
   .project .project-slider .slide-box {
     width: 50%;
   }
+  .certificate .certificate-slider .box {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 540px) {
   .project .project-slider .slide-box .box {
-    height: 395px;
+    height: 450px;
   }
 }
 @media screen and (max-width: 440px) {
   .project .project-slider .slide-box {
     width: 100%;
   }
+  .certificate .certificate-slider .box {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 440px) {
   .main-content {
+    width: 100%;
+  }
+  .certificate {
     width: 100%;
   }
 }
